@@ -1,0 +1,2 @@
+#!/usr/in/python
+text
