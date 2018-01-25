@@ -28,3 +28,17 @@ print r
 def func(a, b, c=0, *args, **kw):       #*args是可变参数，args接收的是一个tuple,**kw是关键字参数，kw接收的是一个dict。
                                         #可变参数既可以直接传入：func(1, 2, 3)，又可以先组装list或tuple，再通过*args传入：func(*(1, 2, 3))，关键字参数既可以直接传入：func(a=1, b=2)，又可以先组装dict，再通过**kw传入：func(**{'a': 1, 'b': 2})。
     print 'a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw
+
+
+def fact(n):            #递归函数
+    if n==1
+        return 1
+    return n * fact(n-1)
+
+def fact(n):            #尾递归优化 
+    return fact_iter(n, 1)
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num - 1, num * product)
