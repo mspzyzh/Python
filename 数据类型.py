@@ -15,11 +15,29 @@
 a1 = "牛马"
 a2 = 18
 a3 = 1.234
-# 打印变量
-print(a1)
-print(a2)
-print(a3)
-# 打印变量类型
-print(type(a1))
-print(type(a2))
-print(type(a3))
+
+# 打印变量类型和变量值
+print(type(a1),a1)
+print(type(a2),a2)
+print(type(a3),a3)
+
+#数据类型转换
+#整数浮点数转字符串
+b2 = str(a2)
+b3 = str(a3)
+print(type(b2),b2)
+print(type(b3),b3)
+
+#字符串转整数
+c2 = int(b2)
+print(type(c2),c2)
+
+#字符串转浮点数
+c3 = float(b3)
+print(type(c3),c3)
+
+#整数浮点数互转
+d2 = float(a2)
+d3 = int(a3)
+print(type(d2),d2)
+print(type(d3),d3)
